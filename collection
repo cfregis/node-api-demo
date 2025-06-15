@@ -1,0 +1,154 @@
+type: collection.insomnia.rest/5.0
+name: User-NestJS
+meta:
+  id: wrk_edb6d4921a0547ba9edb553e3de7c230
+  created: 1749948217361
+  modified: 1749948217361
+  description: ""
+collection:
+  - url: http://localhost:3000/user
+    name: Users
+    meta:
+      id: req_194bbfd874a84771add02fbcf500ebf9
+      created: 1749948217370
+      modified: 1749948411293
+      isPrivate: false
+      description: ""
+      sortKey: -1715131282496
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/9.1.1
+    scripts:
+      preRequest: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/user/2
+    name: Users id
+    meta:
+      id: req_2a6da3b50e6e456aaf8a51c2c1bf8528
+      created: 1749948217373
+      modified: 1749948453333
+      isPrivate: false
+      description: ""
+      sortKey: -1715131282446
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/9.1.1
+    scripts:
+      preRequest: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/user
+    name: Users save
+    meta:
+      id: req_fff5f3c91c794519a235b6fb8a8a7fa6
+      created: 1749948217376
+      modified: 1749948333609
+      isPrivate: false
+      description: ""
+      sortKey: -1715131282396
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Jose Carlos Silva Jr",
+        	"email": "developer@dev.com"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.1.1
+    scripts:
+      preRequest: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/user/2
+    name: Users id delete
+    meta:
+      id: req_c3f41f217f254783a0614aceb2e0a0c5
+      created: 1749948217380
+      modified: 1749948481639
+      isPrivate: false
+      description: ""
+      sortKey: -1715131282421
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/9.1.1
+    scripts:
+      preRequest: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/user/2
+    name: Users id put
+    meta:
+      id: req_41ec80f7a0334f1f89e51c06acd6abf8
+      created: 1749948217384
+      modified: 1749948466426
+      isPrivate: false
+      description: ""
+      sortKey: -1715131282433.5
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"name": "Carlos Filipe Regis",
+        		"email": "dev@amin.com"
+        	}
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.1.1
+    scripts:
+      preRequest: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_91d36e9f636b4282a57348e0cdcd9cb3
+    created: 1749948217367
+    modified: 1749948217367
+environments:
+  name: Base Environment
+  meta:
+    id: env_00e309cc7b8b408489998edf03a9205a
+    created: 1749948217364
+    modified: 1749948217364
+    isPrivate: false
