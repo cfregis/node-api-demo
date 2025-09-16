@@ -8,12 +8,13 @@ export const databaseProviders = [
     useFactory: async () => {
       const dataSource = new DataSource({
         type: 'mysql',
-        host: '127.0.0.1',
+        // host: '127.0.0.1',
+        host: 'host.docker.internal',
         port: 3306,
         username: 'root',
         password: 'root',
         connectTimeout: 60 * 60 * 1000,
-        database: 'demodb',
+        database: 'usersdb',
         entities: [__dirname + '/../**/*.entity{.ts,.js}'],
         synchronize: true,
       });
